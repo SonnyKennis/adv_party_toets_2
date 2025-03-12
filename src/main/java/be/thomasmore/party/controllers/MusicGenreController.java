@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MusicGenreController {
@@ -17,9 +18,10 @@ public class MusicGenreController {
     private MusicGenreRepository musicGenreRepository;
 
     @GetMapping("/musicgenrelist")
-    public String musicGenreList(Model model) {
+    public String musicGenreList(@RequestParam(required = false) String searchName,Model model)
+    {
         logger.info(String.format("musicGenreList"));
-        Iterable<MusicGenre> musicGenres = musicGenreRepository.findAll();
+        Iterable<MusicGenre> musicGenres = musicGenreRepository.findByFilter(searchName);
         model.addAttribute("musicGenres", musicGenres);
         return "musicgenrelist";
     }

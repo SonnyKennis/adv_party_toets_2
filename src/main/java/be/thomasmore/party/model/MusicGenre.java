@@ -1,7 +1,11 @@
 package be.thomasmore.party.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import java.util.Collection;
 
 @Entity
 public class MusicGenre {
@@ -11,6 +15,17 @@ public class MusicGenre {
     private String name;
     private String description;
     private int popularity; // Waarde tussen 1 en 10
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    private Collection<Party> parties;
+
+    public Collection<Party> getParties() {
+        return parties;
+    }
+
+    public void setParties(Collection<Party> parties) {
+        this.parties = parties;
+    }
 
     public String getDescription() {
         return description;

@@ -231,14 +231,14 @@ VALUES (7, 'Rock & Alternative', 'Gitarengedreven muziek met invloeden van class
 INSERT INTO MUSIC_GENRE (id, name, description, popularity)
 VALUES (8, 'Pop', 'Commerciële en toegankelijke muziek met catchy melodieën.', 10);
 
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 2);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 5);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 1);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 3);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 4);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 6);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 4);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 6);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 1);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 1);
--- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 5);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 2);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 5);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 1);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 3);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 4);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 6);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 4);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 6);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 1);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 1);
+INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 5);

@@ -24,6 +24,16 @@ public class Party {
     private Collection<Artist> artists;
     @ManyToMany(mappedBy = "parties", fetch = FetchType.LAZY)
     private Collection<Animal> animals;
+    @ManyToMany(mappedBy = "parties", fetch = FetchType.LAZY)
+    private Collection<MusicGenre> musicGenres;
+
+    public Collection<MusicGenre> getMusicGenres() {
+        return musicGenres;
+    }
+
+    public void setMusicGenres(Collection<MusicGenre> musicGenres) {
+        this.musicGenres = musicGenres;
+    }
 
     public Integer getId() {
         return id;

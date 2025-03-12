@@ -18,6 +18,8 @@ public class Animal {
     @ManyToMany(fetch = FetchType.LAZY)
     private Collection<Party> parties;
 
+
+
     public Animal() {
     }
 
