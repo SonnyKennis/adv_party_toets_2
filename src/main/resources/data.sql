@@ -206,3 +206,39 @@ INSERT INTO ANIMAL_PARTIES(ANIMALS_ID, PARTIES_ID)
 values (8, select id from party where name = 'Liberty 2022');
 INSERT INTO ANIMAL_PARTIES(ANIMALS_ID, PARTIES_ID)
 values (8, select id from party where name = 'Uppercuts');
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (1, 'Electronic', 'Dynamische elektronische beats, vaak met synthesizers en digitale effecten.', 9);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (2, 'House', 'Ritmische en melodieuze elektronische muziek, populair in clubs en festivals.', 8);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (3, 'Techno', 'Snelle, repetitieve elektronische beats met een futuristische vibe.', 4);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (4, 'Reggaeton', 'Latijns-Amerikaanse muziekstijl met invloeden uit hip-hop en dancehall.', 10);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (5, 'Deep House', 'Relaxte en atmosferische vorm van housemuziek met diepe bassen.', 6);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (6, 'Chill & Lounge', 'Rustige en ontspannen muziek, vaak instrumentaal of lo-fi.', 5);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (7, 'Rock & Alternative', 'Gitarengedreven muziek met invloeden van classic rock en indie.', 8);
+
+INSERT INTO MUSIC_GENRE (id, name, description, popularity)
+VALUES (8, 'Pop', 'Commerciële en toegankelijke muziek met catchy melodieën.', 10);
+
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 2);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (1, 5);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 1);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (2, 3);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 4);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (3, 6);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 4);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 6);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (5, 1);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 1);
+-- INSERT INTO MUSIC_GENRE_PARTIES (music_genres_id, parties_id) VALUES (8, 5);
